@@ -18,13 +18,13 @@ body {
     border-radius: 10px;
     padding: 10px;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added box shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .product:hover {
     transform: translateY(-5px);
     background-color: #e2e2e2;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced box shadow on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .product img {
@@ -35,6 +35,6 @@ body {
 }
 
 .product:hover img {
-    transform: scale(1.05); /* Scale up image on hover */
+    transform: scale(1.05);
 }
 
