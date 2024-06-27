@@ -1,0 +1,37 @@
+Single Characters,symbols or numbers:
+
+/abc/				a and b and c
+/[abc]/				a or b or c
+/[^abc]/			not a nor b nor c
+/[abc]{3}/			a or b or c, 3 times
+/[a-z]/				a to z
+/[a-z]{3}/			a to z, 3 times
+/a{1,3}/			1 = 1 time,   3 = 3 times
+/a?/	     ==     /a{0,1}/	0 = optional, 1 = only once
+/a*/	     ==     /a{0,}/ 	0 = optional,   = unlimited
+/a+/	     ==     /a{1,}/  	1 = 1 time,     = unlimited
+	
+/^[0-9]/			start with 0-9
+/[0-9]$/			end with 0-9
+
+
+Bulk strings:
+
+/(example1|example2)/		either example1 or example2
+/(example1|example2){3}/	either example1 or example2, 3times
+/(abc){1,3}/			1 = 1 time, 3 = 3 times
+
+Abbreviations:
+
+/\d/         ==     /[0-9]/	0 to 9
+/\D/         ==     /[^0-9]/	not 0 to 9
+/\s/				space
+/\w/	==     /[a-zA-Z0-9_]/	world characters (for usernames)
+/\+/				escaped special character
+/./				ANY character
+
+
+Flags:
+//g				global (match all found)
+//i				case insenstive
+
